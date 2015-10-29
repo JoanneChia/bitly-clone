@@ -1,2 +1,50 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site</title>
+	<link rel="stylesheet" type="text/css" href="/css/application.css">
+</head>
+<body>
+	<body style="background-color:lightgrey">
+	<h1 style="text-align: center">
+	<font face="helvetica">SHORTIFY</h1>
+	<h2 style="text-align: center">
+  <font face="helvetica">Converting long Urls.</font>
+	</h2>
+
+
+  <form action="/urls" method="post" style="text-align:center">
+  <!-- <input type ="text" name="url[long]"> -->
+  <input id = "input" type ="text" name="long_url" placeholder="Paste your link to shorten it!" size="50">
+  <input id = "submitbutton" type ="submit" value="Short it!">
+
+</form>
+</div>
+<div id="error"></div>
+<div align="center" class="error redfont message">
+  <% if @failed %>
+  oops:
+  sure you entered the correct url?
+  <% end %>
+</div>
+
+<table id="datatable" align="center">
+ <tr>
+   <th align ="left"><%= "Long URL"%></th>
+   <th align ="left"><%= "Shortened URL"%></th>
+   <th align ="center"><%= "Click Count"%></th>
+ </tr>
+ <tr>
+ <% @urls.each do |url| %>
+   <td align = "left"><%= url.long_url %></td>
+   <td align = "left"><a href= "http://localhost:9393/<%= url.short_url %>"> 
+   	<%=url.short_url %> </a></td>
+
+   <td align = "center"><%= url.click_count%></td>
+ </tr>
+    <% end %>
+</table>
+
+
+<!-- <h1>Hheeeeeellllllloooo How are you?</h1>
 <p>See Me in views/static/index.html.erb</p>

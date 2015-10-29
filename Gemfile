@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 # Ruby Version
 # ruby "2.2.1"
@@ -23,6 +23,7 @@ gem 'rake'
 
 # Adding rspec for running unit testing
 gem 'rspec'
+gem 'byebug'
 
 group :development, :test do
 	# Adding shotgun for local web hosting

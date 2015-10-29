@@ -1,0 +1,74 @@
+h1 {
+		padding: 10px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    color: orange;
+    font-size: 8em;
+}
+
+#error {
+		 font-family: 'Helvetica', sans-serif;
+		 font-size: 20px;
+		 color: #7f0000;
+}
+
+form {
+		margin-bottom: 40px;
+}
+
+table, td, th {
+		border: solid #CCFF000;
+		border-radius: 10px;
+}	
+
+
+th {
+    padding: 10px;
+    background-color: orange;
+    color: black;
+    height: 30px;
+    font-family: Helvetica;
+    font-size: 15;
+    
+}
+
+
+.redfont {
+	color: #7f0000;
+	font-size: 2.5em;
+}
+
+
+
+#input {
+    padding:20px;
+    border:2px
+    solid #ccc;
+    text-align: left;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 10px;
+}
+
+#submitbutton {
+    padding:20px;
+    background:orange;
+    border:0 none;
+    cursor:pointer;
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 11pt;
+    color:black;
+}
+
+#datatable {
+	  width: 80%;
+  	background-color: white;
+  	margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+
+
+}
